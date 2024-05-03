@@ -1,9 +1,41 @@
 
-public class Multiplicacion {
-   int a, b, r; // se declaran las variables 
+public class Multiplicacion {  
+   @Override
+  public String toString() {
+     return "Multiplicacion [a=" + a + ", b=" + b + ", r=" + r + "]";
+  }
 
-   public int Multiplicar() {
-      r = this.a * this.b; // se declara la operacion a realizar usando this que se refiere a esto
-      return r; // Se return para devolver un valor domde se llaman 
+   private int  a, b, r;
+   public int multiplicacion() {
+     r = this.a * this.b;
+     return r;
    }
+
+  public int getA() {
+     return a;
+  }
+
+  public void setA(int a) {
+     this.a = a;
+  }
+
+  public int getB() {
+     return b;
+  }
+
+  public void setB(int b) {
+     this.b = b;
+  }
+
+  public int getR() {
+     return r;
+  }
+
+  public void setR(int r) {
+     this.r = r;
+  } 
 }
+
+
+
+  
